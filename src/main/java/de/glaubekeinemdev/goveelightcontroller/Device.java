@@ -44,7 +44,7 @@ public class Device {
         return name;
     }
 
-    public boolean enableDevice(final boolean status) {
+    public boolean enable(final boolean status) {
         final boolean result = GoveeLightController.getInstance().updateDevice(this, UpdateType.ENABLE, status);
 
         if(result)
